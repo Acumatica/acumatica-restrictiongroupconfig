@@ -76,48 +76,6 @@ namespace RestrictionGroupConfig
                 screen.Submit(commands.ToArray());
             }
 
-            //Version which does find common accounts/subaccounts and tries to reduce the number of restriction groups to create.
-            //foreach (var group in groups.Where(g=>!(g.Code == "53000" || g.Code == "61060")))
-            //{
-            //    Console.WriteLine("Processing group " + group.Code);
-            //    Console.WriteLine(group.Description);
-
-            //    var commands = new List<GL104000.Command>();
-            //    commands.Add(new GL104000.Value() { LinkedCommand = schema.RestrictionGroup.GroupName, Value = group.Code });
-            //    commands.Add(new GL104000.Value() { LinkedCommand = schema.RestrictionGroup.Description, Value = group.Description });
-            //    commands.Add(new GL104000.Value() { LinkedCommand = schema.RestrictionGroup.Active, Value = "False" });
-
-            //    foreach (string account in group.Accounts)
-            //    {
-            //        if (accounts.Contains(account))
-            //        {
-            //            commands.Add(new GL104000.Value() { LinkedCommand = schema.Accounts.Account, Value = account });
-            //            commands.Add(new GL104000.Value() { LinkedCommand = schema.Accounts.Included, Value = "True", Commit = true });
-            //        }
-            //        else
-            //        {
-            //            Console.WriteLine("Account {0} does not exist.", account);
-            //        }
-            //    }
-
-            //    foreach (string sub in group.Subaccounts)
-            //    {
-            //        if (subs.Contains(sub))
-            //        {
-            //            commands.Add(new GL104000.Value() { LinkedCommand = schema.Subaccounts.Subaccount, Value = sub });
-            //            commands.Add(new GL104000.Value() { LinkedCommand = schema.Subaccounts.Included, Value = "True", Commit = true });
-            //        }
-            //        else
-            //        {
-            //            Console.WriteLine("Sub {0} does not exist.", sub);
-            //        }
-            //    }
-
-            //    commands.Add(schema.Actions.Save);
-            //    screen.Clear();
-            //    screen.Submit(commands.ToArray());
-            //}
-
             screen.Logout();
 
             Console.WriteLine("Completed.");
