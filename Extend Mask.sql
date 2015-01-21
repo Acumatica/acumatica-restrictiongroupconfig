@@ -1,0 +1,7 @@
+ALTER TABLE RelationGroup ALTER COLUMN GroupMask varbinary(128)
+ALTER TABLE Neighbour ALTER COLUMN CoverageMask varbinary(128)
+ALTER TABLE Neighbour ALTER COLUMN InverseMask varbinary(128)
+ALTER TABLE Neighbour ALTER COLUMN WinCoverageMask varbinary(128)
+ALTER TABLE Neighbour ALTER COLUMN WinInverseMask varbinary(128)
+ALTER TABLE Account ALTER COLUMN GroupMask varbinary(128)
+ALTER TABLE Sub ALTER COLUMN GroupMask varbinary(128)

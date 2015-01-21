@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RestrictionGroupConfig.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="RestrictionGroupConfig_GL104000_Screen" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.211.55.10/RestrictionTest/Soap/GL104000.asmx</Value>
+    </Setting>
+    <Setting Name="RestrictionGroupConfig_GL202500_Screen" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.211.55.10/RestrictionTest/Soap/GL202500.asmx</Value>
+    </Setting>
+    <Setting Name="RestrictionGroupConfig_GL203000_Screen" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.211.55.10/RestrictionTest/Soap/GL203000.asmx</Value>
+    </Setting>
+    <Setting Name="Login" Type="System.String" Scope="User">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
